@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  get 'landing/about'
-  get 'welcome/about'
-	get 'welcome/index'
+	get 'landing/about'
 
-	root 'welcome#about'
+	root 'landing#about'
 end
