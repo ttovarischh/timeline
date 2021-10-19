@@ -1,0 +1,52 @@
+$blue-main: #2C3E9D;
+$blue-bg: #242532;
+$orang-main: #F69F37;
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+* {
+font-family: 'IBM Plex Mono', monospace;
+}
+
+
+rem, em -- 30px
+mark {
+background-color:white;
+}
+mark-2{
+background-color:$blue-bg;
+}
+border {
+ border-width: 5px;
+}
+h1{
+font-size: 4.8em;
+}
+h2{
+font-size: 2.4em;
+}
+h3{
+font-size: 1.6em;
+}
+h4 {
+font-size: 0.667em;
+}
+p {
+font-size: 1em;
+}
+
+header {
+height: 63px;
+width: 100vw;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+footer {
+height: 100px;
+width: 100vw;
+display: flex;
+justify-content: space-between;
+align-itesms: center;
+}
