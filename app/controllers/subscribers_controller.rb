@@ -6,9 +6,9 @@ class SubscribersController < ApplicationController
   def create
     @subscriber = Subscriber.new(subscriber_params)
     if @subscriber.save
-      redirect_to about_path, notice: "Ура!"
+      redirect_to "/welcome/splash"
     else
-      redirect_to about_path, notice: "Не ура("
+      redirect_to "/welcome/splash"
     end
   end
 

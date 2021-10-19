@@ -1,20 +1,45 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+body{
+  overflow-x: hidden;
+}
+.title{
+  margin-left: 150px;
+}
 h1,h2{
   text-transform: uppercase;
 }
-
 .item{
-  margin-left: 87px;
-  width: 80%;
+  margin-left: -30px;
   display: flex;
+  margin-bottom: 370px;
   .circle{
     border-radius: 100px;
+    min-width: 50px;
     width: 50px;
     height: 50px;
     background-color: #fff;
-    grid-column: 1;
     margin-right: 24px;
   }
+  h2,p{
+    width: 70%;
+  }
+}
+.item-s{
+  margin-bottom: 0px;
+}
+.sub-f{
+  margin-left: 140px;
+  width: 75%;
+  h1{
+    background-color: #2C3E9D;
+  }
+}
+
+.line{
+  margin-top: -200px;
+  padding-top: 400px;
+  margin-left: 87px;
+  border-left: solid 5px #F69F37;
 }
