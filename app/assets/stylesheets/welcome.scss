@@ -19,12 +19,20 @@ h1,h3{
   }
 }
 .circle{
+  position: relative;
   border-radius: 100px;
   min-width: 50px;
   width: 50px;
   height: 50px;
   background-color: #fff;
   margin-right: 24px;
+  text-align: center;
+  span{
+    font-size: 24px;
+    line-height: 50px;
+    color: black;
+    font-family: "icons";
+  }
 }
 .item-s{
   margin-bottom: 0px;
@@ -42,9 +50,4 @@ h1,h3{
   padding-top: 400px;
   margin-left: 87px;
   border-left: solid 5px #F69F37;
-}
-
-span{
-  color: black;
-  font-family: "icons";
 }
