@@ -54,6 +54,10 @@ $orang-main: #F69F37;
 	font-weight: normal;
 }
 
+html {
+	font-size: 30px;
+}
+
 rem, em -- 30px
 mark-3{
   background-color:white;
@@ -61,6 +65,9 @@ mark-3{
 }
 mark-2{
   background-color:$blue-main;
+}
+strong {
+	font-weight: bold;
 }
 .bordered {
  border: 5px solid $orang-main;
