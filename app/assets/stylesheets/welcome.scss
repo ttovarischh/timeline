@@ -1,3 +1,20 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+h1,h2{
+  text-transform: uppercase;
+}
+
+.item{
+  margin-left: 87px;
+  width: 80%;
+  display: flex;
+  .circle{
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    grid-column: 1;
+    margin-right: 24px;
+  }
+}

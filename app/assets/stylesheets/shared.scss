@@ -49,12 +49,15 @@ $orang-main: #F69F37;
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
 * {
-font-family: 'IBM Plex Mono', monospace;
+	font-family: 'IBM Plex Mono', monospace;
+	line-height: normal;
+	font-weight: normal;
 }
 
 rem, em -- 30px
-mark {
+mark-3{
   background-color:white;
+	color: #000000;
 }
 mark-2{
   background-color:$blue-main;
