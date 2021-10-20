@@ -36,6 +36,9 @@ h1,h3{
 }
 .item-s{
   margin-bottom: 0px;
+  .circle{
+    margin-top: 20px;
+  }
 }
 .sub-f{
   margin-left: 140px;
@@ -44,7 +47,11 @@ h1,h3{
     background-color: #2C3E9D;
   }
 }
-
+.free-rider{
+  margin-top: -400px;
+  margin-bottom: 400px;
+  margin-left: -25px;
+}
 .line{
   margin-top: -200px;
   padding-top: 400px;
