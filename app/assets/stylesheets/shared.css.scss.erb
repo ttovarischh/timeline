@@ -160,6 +160,8 @@ footer {
 	background-color: white;
 	border-radius: 50%;
 	margin-left: 27px;
+	display: flex;
+	justify-content: center;
 }
 .iconl {
 	position: relative;
@@ -168,11 +170,12 @@ footer {
 	background-color: white;
 	border-radius: 50%;
 	margin-right: 46px;
+	display: flex;
+	justify-content: center;
 }
 .one {
 	position: absolute;
 	top: 80px;
-	background-color: black;
 }
 .last {
 	position: absolute;
@@ -184,6 +187,9 @@ footer {
 .testing {
 	display: flex;
 	margin-bottom: 37vh;
+}
+.no {
+	margin-left: 95px;
 }
 .testing:last-of-type {
 	margin-bottom: 10vh;
@@ -266,6 +272,12 @@ li {
 	background-size: contain;
 	background-color: $blue-main;
 }
+span {
+    font-size: 24px;
+    line-height: 50px;
+    color: black;
+    font-family: "icons";
+}
 .js {
 	background-image: url("../images/js.png");
 	width: 306px;
@@ -321,6 +333,24 @@ li {
 	width: 60px;
 	background: $blue-main;
 	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+}
+.fircle span {
+	font-size: 28px;
+	line-height: 60px;
+	color: white;
+}
+.search, .updown {
+	width: 30px;
+	height: 60px;
+	background-image: url("../images/search.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.updown {
+	background-image: url("../images/updown.svg");
 }
 .table h3 {
 	margin: 0;
