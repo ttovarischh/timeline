@@ -65,12 +65,12 @@ html {
 	font-size: 30px;
 }
 
-rem, em -- 30px
+// rem, em -- 30px
 
 mark-2{
   background-color:$blue-main;
 }
-mark{
+mark {
   background-color:white;
 	color: #000000;
 }
@@ -82,12 +82,14 @@ strong {
 }
 h1{
   font-size: 4.8em;
+	line-height: 1.1em;
 }
 h2{
   font-size: 2.4em;
 }
 h3{
   font-size: 1.6em;
+	line-height: 1.2em;
 }
 h4 {
   font-size: 0.667em;
@@ -106,7 +108,9 @@ header, footer {
   justify-content: space-between;
   align-items: center;
 	opacity: .6;
+	text-transform: uppercase;
 }
+
 header{
   padding: 20px 5vw;
   height: 63px;
@@ -124,4 +128,211 @@ header{
 footer {
   padding: 50px 5vw;
   height: 100px;
+}
+
+// suka
+
+.main-container {
+	position: relative;
+	display: block;
+  margin-left: 5vw;
+	margin-right: 5vw;
+}
+.linee {
+	position: absolute;
+	background-color: $orang-main;
+	width: 5px;
+	top: 102px;
+	bottom: 0;
+	left: 25px;
+}
+.linea {
+	background-color: $orang-main;
+	height: 5px;
+	margin-left: 25px;
+	right: 0;
+	margin-top: 0.8em;
+	width: 216px;
+}
+.iconn {
+	width: 49px;
+	height: 49px;
+	background-color: white;
+	border-radius: 50%;
+	margin-left: 27px;
+}
+.iconl {
+	position: relative;
+	width: 50px;
+	height: 49px;
+	background-color: white;
+	border-radius: 50%;
+	margin-right: 46px;
+}
+.one {
+	position: absolute;
+	top: 80px;
+	background-color: black;
+}
+.last {
+	position: absolute;
+	bottom: 0;
+}
+.big {
+	margin-top: 20px;
+}
+.testing {
+	display: flex;
+	margin-bottom: 37vh;
+}
+.testing:last-of-type {
+	margin-bottom: 10vh;
+}
+.righter {
+	display: flex;
+	margin-bottom: 37vh;
+}
+.marg {
+	margin-bottom: 40vh;
+	margin-left: 95px;
+}
+.two {
+	top: 234vh;
+}
+.main-container h1:nth-of-type(3), h1:nth-of-type(4) {
+	margin-left: 28%;
+}
+.abt {
+	text-transform: none;
+	padding-bottom: 3%;
+	width: 90%;
+}
+.abt h3 {
+	margin-top: 0;
+}
+.frame {
+	display: inline-flex;
+	padding: 25px;
+	border: solid 3px $orang-main;
+	margin-bottom: 5%;
+}
+.b {
+	background-color: $blue-main;
+}
+.column {
+	margin-left: 27px;
+	width: 50vw;
+}
+.column h3 {
+	margin-top: 0%;
+	margin-bottom: 11%;
+}
+.main-container h2 {
+	text-transform: uppercase;
+}
+ul {
+  list-style-type: disc;
+	width: 74vw;
+	margin-left: 2.5%;
+}
+li {
+	margin-top: 2%;
+}
+.mission li {
+	margin-top: 20px;
+}
+.mission h3 {
+	margin-bottom: 4%;
+}
+.enemy {
+	margin-left: 27px;
+}
+.enemy h3 {
+	margin-top: 0%;
+	margin-bottom: 5%;
+}
+.pics {
+	width: 55vw;
+}
+.pics div {
+	margin-top: 1.1%;
+	border: solid 3px $orang-main;
+	display: inline-block;
+	height: 134px;
+}
+.tg {
+	background-image: url("../images/tg.png");
+	width: 446px;
+	background-size: contain;
+	background-color: $blue-main;
+}
+.js {
+	background-image: url("../images/js.png");
+	width: 306px;
+	background-color: $blue-main;
+}
+.s {
+	background-image: url("../images/s.png");
+	width: 134px;
+	background-color: $blue-main;
+}
+.reddit {
+	background-image: url("../images/reddit.png");
+	width: 151px;
+}
+.chan {
+	background-image: url("../images/chan.png");
+	width: 258px;
+}
+.vk {
+	width: 359px;
+	overflow: auto;
+}
+.wiki {
+	overflow: auto;
+	width: 234px;
+	background-color: $blue-main;
+}
+.pics p {
+	text-align: center;
+	font-size: 48px;
+	line-height: 134px;
+}
+.tt {
+	background-image: url("../images/tt.png");
+	width: 134px;
+	background-color: $blue-main;
+}
+.funct h2 {
+	margin-bottom: 5%;
+}
+.conclude {
+	margin-top: 5%;
+}
+.funct {
+	padding-bottom: 30%;
+}
+.funct h3 {
+	text-transform: none;
+	line-height: 60px;
+}
+.fircle {
+	height: 60px;
+	width: 60px;
+	background: $blue-main;
+	border-radius: 50%;
+}
+.table h3 {
+	margin: 0;
+}
+.row {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.8%;
+}
+.left {
+	margin-left: 22px;
+}
+.right {
+	margin-right: 22px;
 }
