@@ -1,0 +1,20 @@
+<div class="together">
+  <div class="icon"></div>
+  <p>
+    <b>Событие:</b>
+    <%= comment.body %>
+  </p>
+</div>
+<div class="yeah">
+  <p>
+    <b>Дата:</b>
+    <%= comment.date %>
+  </p>
+  <p>
+    <b>Позиция:</b>
+    <%= comment.position %>
+  </p>
+  <%= link_to 'Destroy Comment', [comment.post, comment],
+          :confirm => 'Are you sure?',
+          :method => :delete %>
+</div>

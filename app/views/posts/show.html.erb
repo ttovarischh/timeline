@@ -24,52 +24,12 @@
 
 <div class="new_com">
   <h3>Добавить новое событие:</h3>
-  <%= form_for([@post, @post.comments.build]) do |f| %>
-  	<div class="field">
-  		<%= f.label :Название %><br />
-  		<%= f.text_area :body %>
-  	</div>
-    <div class="field">
-  		<%= f.label :position %><br />
-  		<%= f.text_area :position %>
-  	</div>
-    <div class="field">
-  		<%= f.label :date %><br />
-  		<%= f.text_area :date %>
-  	</div>
-
-  	<div class="actions">
-  		<%= f.submit %>
-  	</div>
-  <% end %>
+<%= render "comments/form" %>
 </div>
 
 <div class="ocassions">
   <h2>События таймлайна:</h2>
-  <%= render @post.comments %>
-  <% @post.comments.each do |comment| %>
-    <div class="together">
-      <div class="icon"></div>
-      <p>
-        <b>Событие:</b>
-        <%= comment.body %>
-      </p>
-    </div>
-    <div class="yeah">
-      <p>
-        <b>Дата:</b>
-        <%= comment.date %>
-      </p>
-      <p>
-        <b>Позиция:</b>
-        <%= comment.position %>
-      </p>
-      <%= link_to 'Destroy Comment', [comment.post, comment],
-              :confirm => 'Are you sure?',
-              :method => :delete %>
-    </div>
-
-  <% end %>
+<%= render @post.comments %>
 </div>
 
 
