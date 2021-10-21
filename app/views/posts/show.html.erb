@@ -46,6 +46,7 @@
 
 <div class="ocassions">
   <h2>События таймлайна:</h2>
+  <%= render @post.comments %>
   <% @post.comments.each do |comment| %>
     <div class="together">
       <div class="icon"></div>
@@ -63,6 +64,9 @@
         <b>Позиция:</b>
         <%= comment.position %>
       </p>
+      <%= link_to 'Destroy Comment', [comment.post, comment],
+              :confirm => 'Are you sure?',
+              :method => :delete %>
     </div>
 
   <% end %>

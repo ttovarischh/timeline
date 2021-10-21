@@ -4,6 +4,6 @@ class Post < ApplicationRecord
 											:length => { :minimum => 0 }
 
     mount_uploader :image, ImageUploader
-    has_many :comments
+    has_many :comments, :dependent => :destroy
 
 end
