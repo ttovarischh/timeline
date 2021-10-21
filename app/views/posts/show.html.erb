@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @post.name %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @post.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @post.description %>
+</p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @post.tag %>
+</p>
+
+<%= image_tag(@post.image.url, alt: 'Image') if @post.image? %>
+
+<h2>Новое событие:</h2>
+<%= form_for([@post, @post.comments.build]) do |f| %>
+	<div class="field">
+		<%= f.label :commenter %><br />
+		<%= f.text_field :commenter %>
+	</div>
+	<div class="field">
+		<%= f.label :body %><br />
+		<%= f.text_area :body %>
+	</div>
+  <div class="field">
+		<%= f.label :position %><br />
+		<%= f.text_area :position %>
+	</div>
+  <div class="field">
+		<%= f.label :date %><br />
+		<%= f.text_area :date %>
+	</div>
+  <%= select_tag :type, options_for_select(['All'] | shop.types.map{|o| [o, o.downcase] }),class: 'hometest' %>
+	<div class="actions">
+		<%= f.submit %>
+	</div>
+<% end %>
+
+<h2>События таймлайна:</h2>
+<% @post.comments.each do |comment| %>
+	<p>
+		<b>Коментатор:</b>
+		<%= comment.commenter %>
+	</p>
+	<p>
+		<b>Событие:</b>
+		<%= comment.body %>
+	</p>
+  <p>
+		<b>Позиция:</b>
+		<%= comment.position %>
+	</p>
+  <p>
+    <b>Дата:</b>
+    <%= comment.date %>
+  </p>
+<% end %>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
