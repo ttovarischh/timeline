@@ -6,7 +6,7 @@ class SubscribersController < ApplicationController
   def create
     @subscriber = Subscriber.new(subscriber_params)
     if @subscriber.save
-      redirect_to "/welcome/splash"
+      redirect_to "/subs/thanx"
     else
       redirect_to "/welcome/splash"
     end

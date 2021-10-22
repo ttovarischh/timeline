@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'subs/thanx'
   get 'welcome/splash'
 	get 'landing/about'
   get 'posts/index'
