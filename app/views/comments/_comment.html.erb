@@ -6,15 +6,17 @@
   </p>
 </div>
 <div class="yeah">
-  <p>
-    <b>Дата:</b>
-    <%= comment.date %>
-  </p>
-  <p>
-    <b>Позиция:</b>
-    <%= comment.position %>
-  </p>
-  <%= button_to 'Destroy Comment', [comment.post, comment],
-          :confirm => 'Are you sure?',
-          :method => :delete %>
+  <div class="tothe">
+    <p>
+      <b>Дата:</b>
+      <%= comment.date %>
+    </p>
+    <p>
+      <b>Позиция:</b>
+      <%= comment.position %>
+    </p>
+    <%= button_to 'Destroy Comment', [comment.post, comment],
+            :confirm => 'Are you sure?',
+            :method => :delete %>
+  </div>
 </div>

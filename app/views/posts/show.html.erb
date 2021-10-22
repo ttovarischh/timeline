@@ -9,6 +9,11 @@
     </p>
 
     <p>
+      <strong>Тайтл:</strong>
+      <%= @post.title %>
+    </p>
+
+    <p>
       <strong>Описание:</strong>
       <%= @post.description %>
     </p>
@@ -23,12 +28,12 @@
 
 
 <div class="new_com">
-  <h3>Добавить новое событие:</h3>
+  <h3><mark>Добавить новое событие:</mark></h3>
 <%= render "comments/form" %>
 </div>
 
 <div class="ocassions">
-  <h2>События таймлайна:</h2>
+  <h3><mark>События таймлайна:</mark></h3>
 <%= render @post.comments.select(&:persisted?) %>
 </div>
 

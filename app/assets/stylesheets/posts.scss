@@ -14,6 +14,8 @@
   height: auto;
 }
 .cover {
+  display: flex;
+  align-items: center;
   position: relative;
   width: 100vw;
   height: 300px;
@@ -32,15 +34,15 @@
 .new_com, .ocassions {
   margin-left: 6.5vw;
   margin-top: 100px;
+  h3 {
+    margin-bottom: 30px;
+  }
 }
 .ocassions {
   margin-bottom: 200px;
+  margin-top: 150px;
 }
-.new_com {
-  h3 {
-    margin-bottom: 15px;
-  }
-}
+
 .together {
   margin-top: 20px;
   margin-bottom: 20px;

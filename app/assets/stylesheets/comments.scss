@@ -1,3 +1,24 @@
 // Place all the styles related to the Comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+.fo label {
+  color: white;
+  margin-bottom: 10px;
+}
+textarea {
+  background-color: transparent;
+  border: 3px solid #F69F37;
+  color: white;
+}
+.field {
+  margin-right: 3vw;
+  display: inline-block;
+}
+.yeah {
+  margin-bottom: 42px;
+}
+.tothe {
+  margin-left: 80px;
+}

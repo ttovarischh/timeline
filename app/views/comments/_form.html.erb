@@ -1,14 +1,14 @@
 <%= form_for([@post, @post.comments.build]) do |f| %>
   <div class="field">
-    <%= f.label :Название %><br />
+    <span class="fo"><%= f.label :Название %></span>
     <%= f.text_area :body %>
   </div>
   <div class="field">
-    <%= f.label :position %><br />
+    <%= f.label :Позиция %>
     <%= f.text_area :position %>
   </div>
   <div class="field">
-    <%= f.label :date %><br />
+    <%= f.label :Дата %>
     <%= f.text_area :date %>
   </div>
 
