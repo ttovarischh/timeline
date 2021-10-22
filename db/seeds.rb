@@ -1,3 +1,6 @@
+Post.destroy_all
+puts "Destroyed everything you touch"
+
 # post = Post.create(
 # 	name: "Очередные Звездные войны",
 #   title: "Bad Seeds",
@@ -28,10 +31,11 @@ posts = [
   image: URI.open("https://images4.alphacoders.com/884/884071.jpg")
 },
 {
-	name: "Old Album",
-	title: "The Bad Seeds Old",
-	description: "Nick Cave Old Too",
-	tag: "Some Old Tracklist"
+	name: "Доктор Кто",
+	title: "День Доктора",
+	description: "ЛУЧшИй тАЙмЛаЙн на свете",
+	tag: "британия, НЛО",
+  image: URI.open("https://cs11.pikabu.ru/post_img/big/2020/05/28/9/159067852718112649.jpg")
 }
 ]
 posts.each do |post|
