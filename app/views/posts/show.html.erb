@@ -29,7 +29,7 @@
 
 <div class="ocassions">
   <h2>События таймлайна:</h2>
-<%= render @post.comments %>
+<%= render @post.comments.select(&:persisted?) %>
 </div>
 
 
