@@ -36,6 +36,13 @@ posts = [
 	description: "ЛУЧшИй тАЙмЛаЙн на свете",
 	tag: "британия, НЛО",
   image: URI.open("https://cs11.pikabu.ru/post_img/big/2020/05/28/9/159067852718112649.jpg")
+},
+{
+	name: "Якудза",
+	title: "Yakuza Kiwami",
+	description: "Ремейк Yakuza на PS2.",
+	tag: "игры, мафия",
+  image: URI.open("https://image.api.playstation.com/vulcan/img/cfn/113075ogFO6zsOviyODAYPSUxTdyQ7RAHvusY_WWjns1t92AtgjchZiS_ATSX_v2dWUlkiyEcPZeEfd8Qd3EeIO940cIbJ1U.png")
 }
 ]
 posts.each do |post|
